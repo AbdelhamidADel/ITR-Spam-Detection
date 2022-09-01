@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Project</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="static/styles/style.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Abril+Fatface|Poppins">
+    </head>
+  <body>
+    <div class="topnav">
+      <a class="active" href="Home.html">Home</a>
+      <a href="Project.html">Project</a>
+      <a href="About.html">About</a>
+    </div>
+
+    <div class="p_background" style="padding-left: 16px">
+      <div class="text_project">
+      <h1 class="NLTK">Spam Detection</h1>
+
+
+      <form action="{{ url_for('Project')}}" , method="post" class="form">
+        <p><label for="w3review">Enter Text Here:</label></p>
+
+        <textarea id="w3review" name="text" rows="4" cols="50" ></textarea>
+        <br />
+        <button class="button-24" role="button">Process</button>
+        <div class="output">
+          {{output}}
+        </div>
+      </form>
+      </div>
+    </div>
+  
+  </body>
+</html>
