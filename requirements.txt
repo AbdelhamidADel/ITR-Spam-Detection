@@ -1,7 +1,7 @@
 Flask
-nltk==3.7
-numpy==1.23.1
-pandas==1.4.3
-scikit_learn==1.1.2
-Werkzeug==2.1.2
+nltk
+numpy
+pandas
+scikit_learn
+Werkzeug
 gunicorn
